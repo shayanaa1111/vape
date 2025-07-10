@@ -95,7 +95,7 @@ body {
 /* Theme Toggle Button */
 .theme-toggle {
   position: fixed;
-  top: 20px;
+  top: 40px;
   right: 20px;
   z-index: 1001;
   background: var(--bg-card);
