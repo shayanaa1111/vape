@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIMBUS - Where Passion Meets the Clouds</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <!--<button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>-->
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Animated Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-flame">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 5C25 8 30 15 28 25C26 35 20 38 15 35C10 32 8 25 12 20C16 15 20 5 20 5Z" fill="url(#flameGradient)"/>
+                        <defs>
+                            <linearGradient id="flameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF6B35"/>
+                                <stop offset="100%" style="stop-color:#F7931E"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">NIMBUS</span>
+            </div>
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#" data-page="home" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#" data-page="products"><i class="fas fa-box"></i> Products</a></li>
+            <li><a href="#" data-page="about"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#" data-page="contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="#" data-page="blog"><i class="fas fa-blog"></i> Blog</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header-logo">
+                <div class="logo-flame">
+                    <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 5C25 8 30 15 28 25C26 35 20 38 15 35C10 32 8 25 12 20C16 15 20 5 20 5Z" fill="url(#headerFlameGradient)"/>
+                        <defs>
+                            <linearGradient id="headerFlameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF6B35"/>
+                                <stop offset="100%" style="stop-color:#F7931E"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">NIMBUS</span>
+            </div>
+            <nav class="header-nav">
+                <a href="#" data-page="home" class="active">Home</a>
+                <a href="#" data-page="products">Products</a>
+                <a href="#" data-page="about">About</a>
+                <a href="#" data-page="contact">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+          
+        <div class="page active" id="home">
+            <div class="pic">
+                    
+                </div>
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-background">
+                    <div class="hero-particles"></div>
+                </div>
+               
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="brand-logo">
+                            <img src="attached_assets/image_1750794011074.png" alt="NIMBUS Logo" class="logo-image light-logo">
+                            <img src="attached_assets/image_1750792099583.png" alt="NIMBUS Logo" class="logo-image dark-logo">
+                        </div>
+                        <h1 class="hero-title">Where Passion Meets the Clouds</h1>
+                        <p class="hero-subtitle">Experience the next generation of vaping technology with NIMBUS premium devices designed for enthusiasts who demand excellence.</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">50K+</span>
+                                <span class="stat-label">Happy Customers</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Premium Products</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Support</span>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" data-page="products">Explore Products</button>
+                            <button class="btn btn-secondary" data-page="about">Learn More</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features">
+                <div class="container">
+                    <h2 class="section-title">Why Choose NIMBUS</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Premium Quality</h3>
+                            <p>Crafted with precision using the finest materials for unmatched durability and performance.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>Advanced Technology</h3>
+                            <p>Cutting-edge features and innovative design for the ultimate vaping experience.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>User-Centric</h3>
+                            <p>Designed with the user in mind, ensuring comfort, convenience, and satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Product Showcase -->
+            <section class="product-showcase">
+                <div class="container">
+                    <div class="showcase-content">
+                        <div class="showcase-text">
+                            <h2>Featured Collection</h2>
+                            <p>Discover our flagship series designed for connoisseurs who appreciate sophistication and performance in perfect harmony.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Premium build quality</li>
+                                <li><i class="fas fa-check"></i> Advanced temperature control</li>
+                                <li><i class="fas fa-check"></i> Long-lasting battery life</li>
+                                <li><i class="fas fa-check"></i> Sleek modern design</li>
+                            </ul>
+                            <div class="btn-wrapper">
+                                <button class="btn btn-primary" data-page="products">View Collection</button><br><br><br>
+                            </div>
+                        </div>
+                        <div class="showcase-image">
+                            <div class="feature-highlights">
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-thermometer-half"></i>
+                                    </div>
+                                    <span>Temperature Control</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-battery-full"></i>
+                                    </div>
+                                    <span>Long Battery Life</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <span>Safety Features</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <span>Compact Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Carousel Section -->
+            <section class="blog-carousel">
+                <div class="container">
+                    <h2 class="section-title">Latest News & Updates</h2>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper" id="blogCarousel">
+                            <div class="carousel-slide active">
+                                <div class="blog-post">
+                                    <div class="post-image">
+                                        <img src="all pics/3.png" alt="New NIMBUS Pro Release">
+                                    </div>
+                                    <div class="post-content">
+                                        <span class="post-date">December 2024</span>
+                                        <h3>Introducing NIMBUS Pro Series</h3>
+                                        <p>Experience the future of vaping with our latest flagship device featuring advanced temperature control and premium build quality.</p>
+                                        <a href="#" class="read-more" data-page="blog">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-slide">
+                                <div class="blog-post">
+                                    <div class="post-image">
+                                        <img src="all pics/4.png" alt="Compact Design Innovation">
+                                    </div>
+                                    <div class="post-content">
+                                        <span class="post-date">November 2024</span>
+                                        <h3>OXIM XE PRO</h3>
+                                        <p>Discover NIMBUS OXIM XE PRO - where passion meets innovation in cloud technology. Experience lightning-fast, secure, and reliable cloud solutions designed for performance.</p>
+                                        <a href="#" class="read-more" data-page="blog">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-slide">
+                                <div class="blog-post">
+                                    <div class="post-image">
+                                        <img src="all pics/5.png" alt="Community Stories">
+                                    </div>
+                                    <div class="post-content">
+                                        <span class="post-date">November 2024</span>
+                                        <h3>OXIM PRO 2</h3>
+                                        <p>Discover NIMBUS OXIM PRO 2 - where passion meets innovation in cloud technology. Experience lightning-fast, secure, and reliable cloud solutions designed for performance.</p>
+                                        <a href="#" class="read-more" data-page="blog">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" id="prevBtn">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next" id="nextBtn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Products Page -->
+        <div class="page" id="products">
+            <section class="page-headers">
+                <div class="containers">
+                    <h1>Our Products</h1>
+                    <p>Explore our complete range of premium vaping devices</p>
+                </div>
+            </section>
+            
+            <section class="products-section">
+                <div class="container">
+                    <div class="products-filter">
+                        <button class="filter-btn active" data-filter="all">All Products</button>
+                        <button class="filter-btn" data-filter="devices">Deals</button>
+                        
+                        
+                    </div>
+                    
+                    <div class="products-grid">
+                        <div class="product-card" data-category="pods">
+                            <div class="product-image">
+                                <img src="all pics/3.png" alt="NIMBUS Pro Series" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <h3>NIMBUS Pro Series</h3>
+                                <p>Premium flagship device with advanced features</p>
+                                <div class="product-features">
+                                    <span>Temperature Control</span>
+                                    <span>Long Battery</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card" data-category="pods">
+                            <div class="product-image">
+                                <img src="all pics/2.png" alt="NIMBUS Compact" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <h3>OXIM PRO 2</h3>
+                                <p>Portable design without compromising performance</p>
+                                <div class="product-features">
+                                    <span>Compact</span>
+                                    <span>Efficient</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card" data-category="accessories">
+                            <div class="product-image">
+                                <img src="all pics/8.png" alt="Premium Charger" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <h3>OXIM XE PRO</h3>
+                                <p>Fast satisfaction and enjoyment for all NIMBUS devices</p>
+                                <div class="product-features">
+                                    <span>Fast Charge</span>
+                                    <span>Universal</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card" data-category="pods">
+                            <div class="product-image">
+                                <img src="all pics/9.png" alt="Replacement Pods" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <h3>OXIM PRO</h3>
+                                <p>High-quality replacement pods for optimal performance</p>
+                                <div class="product-features">
+                                    <span>Premium Quality</span>
+                                    <span>Long Lasting</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-category="devices">
+                            <div class="product-image">
+                                <img src="1.png" alt="Replacement Pods" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <h3>Mega Deal 1</h3>
+                                <p>High-quality replacement pods for optimal performance</p>
+                                <div class="product-features">
+                                    <span>Premium Quality</span>
+                                    <span>Long Lasting</span>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="product-card" data-category="devices">
+                            <div class="product-image">
+                                <img src="2.png" alt="Replacement Pods" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <h3>Mega Deal 2</h3>
+                                <p>High-quality pods</p>
+                                <div class="product-features">
+                                    <span>Premium Quality</span>
+                                    <span>Long Lasting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div class="page" id="about">
+            <div class="pics">
+
+            </div>
+            <section class="page-header">
+                <div class="container">
+                    <h1>About NIMBUS</h1>
+                    <p>Where passion meets innovation in the clouds</p>
+                </div>
+            </section>
+            
+            <section class="about-content">
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <h2>Our Story</h2>
+                            <p>NIMBUS was born from a passion for excellence and a vision to create the ultimate vaping experience. We believe that every cloud should be perfect, every moment should be enjoyed, and every device should be a masterpiece.</p>
+                            
+                            <h3>Our Mission</h3>
+                            <p>To revolutionize the vaping industry through innovative design, premium quality, and unwavering commitment to customer satisfaction.</p>
+                            
+                            <h3>Our Values</h3>
+                            <ul>
+                                <li>Innovation in every product</li>
+                                <li>Uncompromising quality standards</li>
+                                <li>Customer-centric approach</li>
+                                <li>Sustainable practices</li>
+                            </ul>
+                        </div>
+                        <div class="about-image">
+                            <div class="about-visual"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="team-section">
+               <!-- <div class="container">
+                    <h2>Our Team</h2>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-avatar"></div>
+                            <h3>Alex Chen</h3>
+                            <p>Founder & CEO</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar"></div>
+                            <h3>Sarah Johnson</h3>
+                            <p>Head of Design</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar"></div>
+                            <h3>Michael Torres</h3>
+                            <p>Technical Director</p>
+                        </div>
+                    </div>
+                </div>-->
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div class="page" id="contact">
+            <section class="page-header">
+                <div class="container">
+                    <h1>Get in Touch</h1>
+                    <p>Connect with us through your favorite platform</p>
+                </div>
+            </section>
+            
+            <section class="contact-content">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <h2>Reach Out to Us</h2>
+                            <p>Have questions about our products? Want to collaborate? Or just want to say hello? We'd love to hear from you!</p>
+                            
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <h3>Email</h3>
+                                        <p>nimbus.official@gmail.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <h3>Phone</h3>
+                                        <p>0086-132-69923421</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <h3>Made</h3>
+                                        <p>In China</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-platforms">
+                            <h2>Connect on Social</h2>
+                            <div class="social-grid">
+                                <a href="https://www.instagram.com/nimbuspk.official/" class="social-card instagram">
+                                    <i class="fab fa-instagram"></i>
+                                    <div>
+                                        <h3>Instagram</h3>
+                                        <p>@nimbusvape</p>
+                                    </div>
+                                </a>
+                                
+                                
+                                
+                                <a href="https://www.facebook.com/profile.php?id=61575808547803" class="social-card facebook">
+                                    <i class="fab fa-facebook"></i>
+                                    <div>
+                                        <h3>Facebook</h3>
+                                        <p>NIMBUS Vape</p>
+                                    </div>
+                                </a>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Blog Page -->
+      
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-flame">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 5C25 8 30 15 28 25C26 35 20 38 15 35C10 32 8 25 12 20C16 15 20 5 20 5Z" fill="url(#footerFlameGradient)"/>
+                                <defs>
+                                    <linearGradient id="footerFlameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FF6B35"/>
+                                        <stop offset="100%" style="stop-color:#F7931E"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="logo-text">NIMBUS</span>
+                    </div>
+                    <p>Where Passion Meets the Clouds</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/nimbuspk.official/"><i class="fab fa-instagram"></i></a>
+                    
+                        <a href="https://www.facebook.com/profile.php?id=61575808547803"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="products">Products</a></li>
+                        <li><a href="#" data-page="about">About</a></li>
+                        <li><a href="#" data-page="contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">User Manual</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>nimbus.official@gmail.com</li>
+                        <li>0086-132-69923421</li>
+                        <li>MADE<br>IN CHINA</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NIMBUS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
